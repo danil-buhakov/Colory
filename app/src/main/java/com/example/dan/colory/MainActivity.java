@@ -26,14 +26,14 @@ public class MainActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
-        btnChangeColor = (Button) findViewById(R.id.btnChangeColor);
+        //btnChangeColor = (Button) findViewById(R.id.btnChangeColor);
         clBackground = (ConstraintLayout) findViewById(R.id.clBackground);
-        btnChangeColor.setOnClickListener(new View.OnClickListener() {
+/*        btnChangeColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setColor();
             }
-        });
+        });*/
 
 
         setColor();
