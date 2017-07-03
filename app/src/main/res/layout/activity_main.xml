@@ -2,16 +2,19 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/clBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/clBackground"
     tools:context="com.example.dan.colory.MainActivity">
+
+
+    
 
     <RelativeLayout
         android:layout_width="368dp"
         android:layout_height="376dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <Button
             android:id="@+id/btnChangeColor"
@@ -19,18 +22,16 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="Change color"
+            android:text="@string/btn_name"
             tools:layout_editor_absoluteX="128dp"
             tools:layout_editor_absoluteY="163dp" />
 
         <com.example.dan.colory.StarView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true" />
 
     </RelativeLayout>
-
     <ImageView
         android:id="@+id/dvGradient"
         android:layout_width="0dp"
@@ -40,5 +41,45 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="192dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="392dp">
+        <TextView
+            android:id="@+id/txtRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red_name"
+            android:textSize="46sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorRed"
+            android:layout_marginLeft="40sp"/>
+        <TextView
+            android:id="@+id/txtGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green_name"
+            android:textSize="46sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorGreen"
+            android:layout_marginLeft="140sp"/>
+        <TextView
+            android:id="@+id/txtBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blue_name"
+            android:textSize="46sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="240sp" />
+    </RelativeLayout>
+
+
+
 
 </android.support.constraint.ConstraintLayout>

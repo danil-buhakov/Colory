@@ -1,13 +1,14 @@
 package com.example.dan.colory;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import java.util.Random;
 
@@ -16,14 +17,13 @@ public class MainActivity extends Activity {
 
     private Button btnChangeColor;
     private ConstraintLayout clBackground;
+    private ImageView imgGrad;
     public static int r,g,b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
 
         btnChangeColor = (Button) findViewById(R.id.btnChangeColor);
@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
                 setColor();
             }
         });
+
 
         setColor();
 
