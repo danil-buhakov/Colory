@@ -3,6 +3,7 @@ package com.example.dan.colory;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.support.annotation.Nullable;
@@ -20,6 +21,7 @@ public class StarView extends ImageView {
 
     private Paint paint= new Paint();
     private Path path= new Path();
+    private int color= Color.BLACK;
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -32,6 +34,7 @@ public class StarView extends ImageView {
 
         paint.setStrokeWidth(fat);
         paint.setStyle(Paint.Style.FILL);
+        paint.setColor(color);
 
         // top left
         path.moveTo(mid + half * 0.5f, half * 0.84f);
@@ -51,5 +54,9 @@ public class StarView extends ImageView {
 
         super.onDraw(canvas);
 
+    }
+
+    public void setColor(int Color){
+        color=Color;
     }
 }

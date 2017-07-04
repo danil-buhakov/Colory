@@ -100,7 +100,7 @@
         tools:layout_editor_absoluteY="8dp">
 
         <com.example.dan.colory.StarView
-            android:id="@+id/imageView3"
+            android:id="@+id/svMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -122,40 +122,45 @@
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="10"
+                android:tag="Red"
                 android:text="@string/red_name"
                 android:textAlignment="center"
                 android:textColor="@color/colorRed"
                 android:textSize="46sp" />
+
             <TextView
                 android:id="@+id/txtGreen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="@string/green_name"
-                android:textSize="46sp"
-                android:paddingRight="20dp"
                 android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:shadowColor="@color/colorBlack"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="10"
-                android:textColor="@color/colorGreen"/>
+                android:tag="Green"
+                android:text="@string/green_name"
+                android:textAlignment="center"
+                android:textColor="@color/colorGreen"
+                android:textSize="46sp" />
+
             <TextView
                 android:id="@+id/txtBlue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="@string/blue_name"
-                android:textSize="46sp"
-                android:paddingRight="20dp"
                 android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:shadowColor="@color/colorBlack"
                 android:shadowDx="5"
                 android:shadowDy="5"
                 android:shadowRadius="10"
-                android:textColor="@color/colorBlue" />
+                android:tag="Blue"
+                android:text="@string/blue_name"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlue"
+                android:textSize="46sp" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
